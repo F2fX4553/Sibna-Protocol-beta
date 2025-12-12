@@ -1,0 +1,20 @@
+include *.md
+include *.txt
+include *.py
+include requirements.txt
+include setup.py
+
+recursive-include obsidian *.py
+recursive-include obsidian *.cpp
+recursive-include obsidian *.dll
+recursive-include obsidian *.so
+recursive-include obsidian *.dylib
+
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include apps *.py
+
+prune *.tmp
+prune *.cache
+prune __pycache__
+prune *.pyc
